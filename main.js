@@ -30,7 +30,7 @@ backColor.forEach((colorSection, i) => {
     trigger: colorSection,
     start: 'top 50%',
     end: 'bottom 5%',
-    markers: false,
+    //markers: false,
     onEnter: () => gsap.to("#contents", {
       backgroundColor: colorSection.dataset.bgcolor
     }),
@@ -57,7 +57,7 @@ const horiz = gsap.to(horSection, {
     trigger: '.port_desc',
     start: 'top 20%',
     end: '+=5000', //애니메이션이 시작되는 지점으로 부터 + 5000px 떨어진곳에 도착하면 애니메이션이 끝남.
-    markers: true,
+    //markers: true,
     scrub: 1.5, //스크롤에 반응 false: 애니메이션 (숫자이용이 더 부드럽게 표현됨)
     pin: true //sticky처럼 화면 고정
   }
